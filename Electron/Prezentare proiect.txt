@@ -1,0 +1,25 @@
+Link la filmuletul cu prezentarea proiectului
+https://fluvid.com/videos/detail/69EpOuXvQ_Fe6pwZD
+
+Brezuleanu Alex
+_
+Tabla de lucru este mapata la o matrice astfel incat in orice moment spatiul gol, piesele respectiv legaturile sunt marcate in matrice cu o valoare (0 pentru spatiu gol, -1 pentru piesa si -2 pentru legatura)
+_
+Pentru desenarea legaturilor se transpun ultimele doua click-uri in pozitii din matrice iar daca aceste pozitii reprezinta puncte de legatura se apeleaza functia de desenare a liniiei.
+_
+Aceasta functie are la baza Algorutmul lui Lee, modificat astfel incat sa minimizeze numarul de schimbari de directie ale căii de legatura. Astfel in desenarea liniei, programul calculeaza daca exista o cale posibila intre doua puncte returnand-o pe cea de lungime minima si cu numarul minim de schimbari de directie. Pozitiile prin care legatura trece vor fi de asemenea marcate in matrice, fiind tot odata bordate astfel incat doua linii sa nu se aproprie foarte tare.
+_
+Piesesle pot fi mutate, rotite sau marite, verificandu-se ca noua dimensiune/pozitie a piesei sa nu intersecteze alte piese sau legaturi.
+In plus, atunci cand o piesa este mutata se verifica daca in noua pozitie mai pot avea loc legaturile. In caz afirmativ acestea se deseneaza, altfel piesa nu se mai poate muta in directia respectiva.
+_
+Piesele atat legate, cat si dezlegate pot fi sterse, stergandu-se dupa caz si legaturile sale.
+
+
+Opariuc Rares Ioan
+Aplicatia are 4 limbi: romana, engleza, germana si franceza. Se schimba limba in functie de preferinte. De asemenea, culorile pieselor si a aplicatiei pot fi schimbate, dupa preferinta utilizatorului.
+_
+In aplicatie, exista un manual de instructiuni pentru fiecare limba in care explica cum sa utilizezi aplicatia. De asemenea, exista 3 butoane: fisier nou, salvare si deschide in care salveaza informatiile in fisier sau le afiseaza pe masa de lucru. Fisierele se deschid din consola si comenzile sunt in cele 4 limbi cu literele aferente.
+_
+Piesele retin marimea lor fizica: selectati o piesa, apasati butonul de set, scrieti valoarea si apasati enter ca valoarea sa fie retinuta.
+
+

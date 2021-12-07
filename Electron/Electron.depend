@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1610459776 source:c:\users\rares\desktop\informatica\facultate\anul i\introducere in programare\electron\main.cpp
+	<iostream>
+	<fstream>
+	<graphics.h>
+	<stdlib.h>
+	<cmath>
+	<stdio.h>
+	<vector>
+	<queue>
+	<stack>
+
