@@ -1,0 +1,61 @@
+div.container{
+width:90%;
+height:85%;
+margin: auto;
+}
+table.inserarea{
+width:100%;
+margin:0;
+background-color:rgb(247, 183, 51); 
+border:10px solid black;
+}
+p.index5{
+margin:0;
+}
+img.inserarea{
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+button{
+background-color: black;
+border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 10px 10px; 
+transition-duration: 0.4s;
+cursor: pointer;
+float:left;
+}
+button.button1{
+background-color: rgb(247, 183, 51); 
+color: black; 
+border: 2px solid black;
+}
+button.button2{
+background-color: black;
+border: none;
+color: white;
+padding: 16px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+margin: 10px 10px; 
+transition-duration: 0.4s;
+cursor: pointer;
+float:right;
+background-color: rgb(247, 183, 51); 
+color: black; 
+border: 2px solid black;
+}
+button:hover{
+background-color: black;
+color: rgb(247, 183, 51);
+}
+button.parcurgere{
+}
