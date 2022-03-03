@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type = text/javascript>
+	var n = 0;
+	function changeplus(){
+		var image = document.getElementById('social');
+		if (n == 0){
+		    image.height = 1000;
+		    image.src = "./Lista simplu inlantuite circulare/images/index_lung.png";
+		    n = 1;
+		}
+		else if (n == 1){
+		   image.src = "4.jpg";
+		   
+		   n = 2;
+		}
+		else if (n == 2){
+		   image.src = "3.jpg";
+		   n = 3;
+		}
+	}
+	function changeminus(){
+		var image = document.getElementById('social');
+		if (n == 1){
+		    image.height = 1000;
+		    image.src = "TIGARA.jpg";
+		    n = 0;
+		}
+		else if (n == 2){
+		   image.src = "4.jpg";
+		   n = 1;
+		}
+		else if (n == 3){
+		   n = 2;
+		   image.src = "3.jpg";
+		}
+		
+	}
+	
+
+</script>
+</head>
+<body>
+<img src = "sg_stanga.png" alt = "3" onclick = "changeminus();" style = "cursor: pointer"/>
+<img src = "sg_dreapta.png" alt = "4" onclick = "changeplus();" style = "cursor:pointer"/>
+<img src = "TIGARA.jpg" alt = "tigara" id = 'social' />
+</body>
+</html>

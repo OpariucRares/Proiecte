@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel = "stylesheet" href = "./css/index.css">
+<script>
+     	var n = 0;
+	function changeplus(){
+		var text1 = document.getElementById('text1');
+		var text2 = document.getElementById('text2');		
+		if (n == 0){
+		   n = 1;
+		   text1.style.display = "none";
+		   text2.style.display = "block";
+		   text3.style.display = "none";
+		}
+		else if (n == 1){
+		   text1.style.display = "none";
+		   text2.style.display = "block";
+		   text3.style.display = "none";
+		   n = 2;
+		}
+		else if (n == 2){
+		   n = 3;
+		   text1.style.display = "none";
+		   text2.style.display = "none";
+		   text3.style.display = "block";
+		}
+	}
+	function changeminus(){
+		var text1 = document.getElementById('text1');
+		var text2 = document.getElementById('text2');
+		var text3 = document.getElementById('text3');	
+		if (n == 1){
+		    n = 0;
+		    text1.style.display = "block";
+		    text2.style.display = "none";
+		    text3.style.display = "none";
+		}
+		else if (n == 2){
+		   text1.style.display = "none";
+		   text2.style.display = "block";
+		   text3.style.display = "none";
+		   n = 1;
+		}
+		else if (n == 3){
+		   n = 2;
+		   text1.style.display = "none";
+		   text2.style.display = "block";
+		   text3.style.display = "none";
+		}
+	}
+</script>
+</head>
+
+<body style = "background-color:rgb(74, 189, 172);">
+<h1 style = "text-align:center; color:white;"> Aplica&#355ii </h1>
+
+<div class = "container">
+<table class = "inserarea" style = "border-bottom:none;" >
+        <tr> 
+		<td>
+			<div style = "font-size:33px; display:block;" id = "text1">
+				<ol>
+					<li><p>Jocul lui Joseph </p> </li>
+					<ul style="list-style-type:disc;">
+						<li> Un grup  format din n copii, numerota&#355i de la 1 la n, joac&#259 urm&#259torul joc: </li>
+						<ul>
+							<li>se a&#351eaz&#259 &#238n cerc, &#238n ordine 1, 2, ….., n, dup&#259 copilul n urm&#226nd copilul 1;</li>
+							<li>informa&#355ia nodului care urmeaz&#259 s&#259 fie inserat &#238n list&#259</li>
+							<li>copilul 1 alege un num&#259r p &#351i, &#238ncep&#226nd cu el, copiii num&#259r&#259 de la 1 la p; </li>
+							<li>copilul care a rostit num&#259rul p este eliminat din joc, iar num&#259r&#259toarea se reia de la copilul care urmeaz&#259 celui eliminat. </li>
+						</ul>
+						<li>Simula&#355i acest joc utiliz&#226nd o list&#259 simpl&#259 &#238nl&#259n&#355uit&#259 circular&#259. Numerele natural nenule n &#351i p se vor citi de la tastatur&#259. Pe ecran se va afi&#351a ordinea &#238n care sunt elimina&#355i copiii din joc. </li>
+					</ul>
+				</ol>
+			</div>
+			<div style = "font-size:33px; display:none;" id = "text2">
+				<ol start = "2">
+					<li><p>Poligon</p> </li>
+					<ul style="list-style-type:disc;">
+						<li> Din fi&#351ierul poligon.in se cite&#351te de pe prima linie num&#259rul de v&#226rfuri ale unui poligon convex, apoi se citesc coordonatele v&#226rfurilor poligonului, date &#238n ordine trigonometric&#259. S&#259 se construiasc&#259 o list&#259 simpl&#259 &#238nl&#259n&#355uit&#259 circular&#259, care s&#259 memoreze &#238n ordinea dat&#259 v&#226rfurile poligonului, apoi s&#259 se determine aria.</li>
+						
+					</ul>
+				</ol>
+			</div>
+			<div style = "font-size:33px; display:none;" id = "text3">
+				<ol start = "3">
+					<li><p>Exerci&#355ii</p> </li>
+					<ul style="list-style-type:disc;">
+						<li>S&#259 se genereze o list&#259 circular&#259 care prelucreaz&#259 numere &#238ntregi:</li>
+						<ol type = "a">
+							<li>s&#259 se parcurg&#259 lista &#238ncep&#226nd de la primul nod &#238n ambele sensuri </li>
+							<li>s&#259 se parcurg&#259 lista &#238ncep&#226nd de la ultimul nod &#238n ambele sensuri </li>
+							<li>s&#259 se parcurg&#259 lista &#238n ambele sensuri din dou&#259 &#238n dou&#259 elemente de n ori </li>
+							<li>s&#259 se parcurg&#259 n elemente pornind de la primul din p in p elemente. De exemplu, dac&#259 lista con&#355ine valorile: 1, 2, 3, 4, 5, 6, 7, 8 &#351i n = 10 iar pasul este 3 atunci se va afi&#351a: 1, 4, 7, 2, 5, 8, 3, 6, 1, 4. </li>
+						</ol>
+						
+					</ul>
+				</ol>
+			</div>
+		</td>
+	</tr>
+</table>
+<table class = "inserarea" style = "border-top:none; height:10%;">
+	<th>
+		<td float = "left"> 
+			<a href = "Index.html"><button class="button button1"> Home </button> </a>
+		</td>
+		<td align = "right">
+			<img src = "./images/sg_stanga.png" alt = "Sageata"  height = "30%" onclick = "changeminus();" style = "cursor:pointer;" />
+			<img src = "./images/sg_dreapta.png" alt = "Sageata" height = "30%" onclick = "changeplus();" style = "cursor:pointer;" /> 
+		</td>
+	</th>
+</table>
+</div>
+</body>
+</html>

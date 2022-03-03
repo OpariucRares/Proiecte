@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel = "stylesheet" href = "./css/index.css">
+<script type="text/javascript">
+	var intervalId;
+	function StartSlideShow(){
+		intervalId = setInterval(changeImage, 750);
+	}
+	function StopSlideShow(){
+		clearInterval(intervalId);
+	}
+	function changeImage(){
+		var imageSource = document.getElementById("img1").getAttribute("src");
+		var currentImageNumber = imageSource.substring(imageSource.lastIndexOf("/") + 1, imageSource.lastIndexOf("/") + 3);
+		if (currentImageNumber == 13)
+			currentImageNumber = 0;
+		var newImage = "./images/animatie/" + (Number(currentImageNumber) + 1) + ".png";
+		document.getElementById("img1").setAttribute("src", newImage);
+	}
+</script>
+</head>
+
+<body style = "background-color:rgb(74, 189, 172);">
+<h1 style = "text-align:center; color:white;"> Parcurgerea unei liste simplu &#238nl&#259n&#355uite circulare </h1>
+
+<div class = "container">
+<table class = "inserarea" style = "border-bottom:none;" >
+        <tr> 
+		<td>
+			<div style = "font-size:33px; display:block;" id = "text1">
+				<ul>
+					<li><p>Pentru a parcurge o list&#259 simplu &#238nl&#259n&#355uit&#259 circular&#259, vom utiliza un pointer p, c&#259ruia &#238i vom atribui ini&#355ial adresa primului element din list&#259. </p> </li>
+					<li><p>La fiecare pas, se viziteaz&#259 nodul current, apoi se trece la nodul urm&#259tor (p = p->urm), p&#226n&#259 c&#226nd se revine la nodul de plecare.  </p></li>
+					<li><p> Func&#355ia urm&#259toare realizeaz&#259 parcurgerea unei liste simplu &#238nl&#259n&#355uite circulare cu afi&#351area informa&#355iilor din noduri.</p> </li>
+				
+				</ul>
+			</div>
+		</td>
+	</tr>
+	<td>
+		<a href = "Index.html"><button class="button button1"> Home </button> </a>
+	</td>
+	
+</table>
+<table class = "inserarea" style = "border-top:none;">
+	<tr>
+		<td align = "center">
+			<div>
+				<img src = "./images/animatie/1.png" height = "500px" id = "img1" />
+			</div>
+			<div float = "right">
+				<button class="button2" id = "mybutton" onclick = "StopSlideShow();"> Stop </button>
+				<button class="button2" id = "mybutton" onclick = "StartSlideShow();"> Start </button>
+			</div>
+		</td>
+	</tr>
+</table>
+</div>
+
+</body>
+</html>
