@@ -1,0 +1,50 @@
+
+------------------
+output: 
+Program corect sintactic
+------------------
+code: 0
+------------------
+functions: 
+{
+    name: #PrintNL
+    return_type: Int
+    params: 
+}
+{
+    name: #PrintS
+    return_type: Int
+    params: String 
+}
+{
+    name: #PrintC
+    return_type: Int
+    params: Char 
+}
+{
+    name: #PrintF
+    return_type: Int
+    params: Float 
+}
+{
+    name: #PrintI
+    return_type: Int
+    params: Int 
+}
+------------------
+variables: 
+{
+    name: #t
+    typename: Bool
+    is_const: false
+    stackframe: #Main_
+    value: False
+}
+{
+    name: #f
+    typename: Bool
+    is_const: false
+    stackframe: #Main_
+    value: True
+}
+------------------

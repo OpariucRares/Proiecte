@@ -1,0 +1,11 @@
+
+------------------
+output: 
+Cannot assign value 'c' of type Char to #x of type Int | line: 3
+------------------
+code: 1
+------------------
+functions: 
+------------------
+variables: 
+------------------

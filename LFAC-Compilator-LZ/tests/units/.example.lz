@@ -1,0 +1,59 @@
+BEGIN_GLOBAL
+
+Var Float #g_x = 5.0;
+Var Float #g_y;
+
+Const Float #PI = 3.14159265;
+
+END_GLOBAL
+
+BEGIN_DEFINITIONS
+Struct $Circle 
+BEGIN
+    Var Float #m_radius;
+    Var Float #m_x;
+    Var Float #m_y;
+END
+
+Func #PiSquared() -> Float
+BEGIN
+    #Return = #PI * #PI;
+END
+
+Func #Add($Circle #c1, $Circle #c2) -> $Circle
+BEGIN
+    #Return.#m_radius = #c1.#m_radius + #c2.#m_radius;
+    #Return.#m_x = #c1.#m_x + #c2.#m_x;
+    #Return.#m_y = #c1.#m_y + #c2.#m_y;
+END
+
+
+END_DEFINITIONS
+BEGIN_MAIN
+Var $Circle #my_circle;
+Var $Circle #my_circle2;
+#g_y = 25.0;
+
+#my_circle.#m_radius = 5.0;
+#my_circle.#m_x = #g_x;
+#my_circle.#m_y = #g_y;
+
+#my_circle2 = #Add(#my_circle, #my_circle2);
+
+#PrintS("Pi^2: ");
+#PrintNL();
+#PrintF(#PiSquared());
+#PrintNL();
+
+Var Int[5] #my_array;
+
+#my_array[0] = 0;
+#my_array[1] = 1;
+#my_array[2] = #my_array[0] + #my_array[1];
+#my_array[3] = #my_array[1] + #my_array[2];
+#my_array[4] = #my_array[2] + #my_array[3];
+
+#PrintS("Fib(3) = ");
+#PrintI(#my_array[4]);
+#PrintNL();
+END_MAIN

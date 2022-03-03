@@ -1,0 +1,92 @@
+
+------------------
+output: 
+Program corect sintactic
+------------------
+code: 0
+------------------
+functions: 
+{
+    name: #PrintNL
+    return_type: Int
+    params: 
+}
+{
+    name: #PrintS
+    return_type: Int
+    params: String 
+}
+{
+    name: #PrintC
+    return_type: Int
+    params: Char 
+}
+{
+    name: #PrintF
+    return_type: Int
+    params: Float 
+}
+{
+    name: #PrintI
+    return_type: Int
+    params: Int 
+}
+------------------
+variables: 
+{
+    name: #p2
+    typename: $Persoana
+    is_const: false
+    stackframe: #Main_
+    value: (null)
+}
+{
+    name: #Varsta
+    typename: Int
+    is_const: false
+    stackframe: $Persoana_#p2_
+    value: 20
+}
+{
+    name: #Nume
+    typename: String
+    is_const: false
+    stackframe: $Persoana_#p2_
+    value: "Andrei"
+}
+{
+    name: #p1
+    typename: $Persoana
+    is_const: false
+    stackframe: #Main_
+    value: (null)
+}
+{
+    name: #Varsta
+    typename: Int
+    is_const: false
+    stackframe: $Persoana_#p1_
+    value: 20
+}
+{
+    name: #Nume
+    typename: String
+    is_const: false
+    stackframe: $Persoana_#p1_
+    value: "Andrei"
+}
+{
+    name: #Nume
+    typename: String
+    is_const: false
+    stackframe: $Persoana_
+    value: (null)
+}
+{
+    name: #Varsta
+    typename: Int
+    is_const: false
+    stackframe: $Persoana_
+    value: (null)
+}
+------------------
