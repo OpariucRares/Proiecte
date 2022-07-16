@@ -1,0 +1,7 @@
+Nodes 4 NumberEdges 6 Undirected yes
+Node nod1 Node nod2 Cost 5
+Node nod1 Node nod3 Cost 1
+Node nod2 Node nod3 Cost 1
+Node nod2 Node nod4 Cost 6
+Node nod3 Node nod5 Cost 1
+Node nod4 Node nod5 Cost 1
