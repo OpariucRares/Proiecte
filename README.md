@@ -18,4 +18,4 @@
 
 **The Adventure of the Nameless Knight** - it was for my Attested in Computer Science in high school. It is also a game made in Unity and C#. It is the final product. The documentation explains about the game and the code (*Proiecte/The Adventure of the Nameless Knight/Documentatie.docx*). In the future, I will make a video presentation about this game.
 
-**SmarthHouse Builder** - it is a project made with the whole group at my faculty. It was for *Software Engineering*. It is a web app which uses Flutter for Frontend and Java Spring for Backend. The link to the github is here: https://github.com/Al-Andrew/SmartHouse-Builder.
+**SmarthHouse Builder** - it is a project made with the whole group at my faculty. It was for *Software Engineering*. It is a web app which uses Flutter for Frontend and Java Spring for Backend. The link to the github is here: https://github.com/Al-Andrew/SmartHouse-Builder and link to the presentation: https://www.youtube.com/watch?v=_RebuL0zH5A
