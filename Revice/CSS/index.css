@@ -35,16 +35,16 @@ body{
   background: #A3B4C8;
 }
 .header div form #SearchBar {
-   border: none;
-   font-size: 25px;
-   font-weight: 500;
-   color: #CC6d3d;
-   background-color:#A3B4C8;
-   width:100%;
-   border-radius: 50px;
+  border: none;
+  font-size: 25px;
+  font-weight: 500;
+  color: #CC6d3d;
+  background-color:#A3B4C8;
+  width:100%;
+  border-radius: 50px;
 }
 .header div form #SearchBar:focus {
-   outline: none
+  outline: none
 }
 .SearchBar{
   padding-top:20px;
@@ -68,7 +68,20 @@ body{
   text-align: center;
   width:20%;
 }
-
+.btnfil{
+  width: 70%;
+  height: 100%;
+  background: #A3B4C8;
+  border:2px solid white;
+  font-size: 20px;
+  color: #022E51;
+  border-radius: 10px;
+  margin: 1px;
+  cursor: pointer;
+  transition: 0.4s linear;
+  margin-left: 15%;
+  margin-right: 15%;
+}
 .btn{
   width: 70%;
   height: 70%;
@@ -87,7 +100,10 @@ body{
   background: orange;
   color:white;
 }
-
+.btnfil:hover{
+  background: green;
+  color:white;
+}
 nav{
   background: #022E51;
 }
@@ -127,13 +143,13 @@ nav ul li a:hover{
   color: cyan;
   border-radius: 5px;
   box-shadow:  0 0 5px #33ffff,
-               0 0 10px #66ffff;
+  0 0 10px #66ffff;
 }
 nav ul ul li a:hover{
   color: cyan;
   border-radius: 5px;
   box-shadow:  0 0 5px #33ffff,
-               0 0 10px #66ffff;
+  0 0 10px #66ffff;
 }
 nav ul ul{
   position: absolute;
@@ -162,6 +178,18 @@ nav ul ul li{
 }
 nav ul ul li a{
   line-height: 50px;
+  font-size: 15px;
+}
+nav ul ul li a input{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 8px 15px;
+  background: none;
+  border: none;
+}
+nav ul ul li a input:hover{
+  color: cyan;
 }
 nav ul ul ul li{
   position: relative;
@@ -198,9 +226,9 @@ nav ul ul ul li{
   }
   nav ul li a:hover{
     color: cyan;
-  border-radius: 5px;
-  box-shadow:  0 0 5px #33ffff,
-               0 0 10px #66ffff;
+    border-radius: 5px;
+    box-shadow:  0 0 5px #33ffff,
+    0 0 10px #66ffff;
   }
   .show{
     display: block;
@@ -278,10 +306,10 @@ nav ul ul ul li{
   content: "";
   height: 5px;
   width: 325px;
-  background-color: #222:
+  background-color: #222;
   border-radius:5px;
   display: block;
-  margin: auto; 
+  margin: auto;
 }
 .card{
   display: flex;
@@ -290,6 +318,7 @@ nav ul ul ul li{
   flex-direction: column;
   box-shadow: 0px 2px 4px rgb(0,0,0,25%);
   width: 325px;
+  height: 470px;
   text-align: center;
   margin: 25px;
   cursor: pointer;
@@ -311,11 +340,11 @@ nav ul ul ul li{
   margin-top: 20px;
 }
 .description h1{
-  font-size: 20px;
+  font-size: 12px;
   text-transform: uppercase;
   color: #222;
   letter-spacing :2px;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 .description p{
   font-size: 17px;
@@ -340,7 +369,7 @@ nav ul ul ul li{
 .button-group .buy:hover{
   background-color: #5B0B1C;
   transition: 0.6s ease;
-  }
+}
 .button-group .favorite{
   background-color: #B74803;
   font-size: 14px;
@@ -361,7 +390,7 @@ nav ul ul ul li{
 .star-icons i{
   color: gold;
   padding: 0px 3px;
-  font-size: 18px; 
+  font-size: 18px;
 }
 .filtru{
   width: 400px;
@@ -407,7 +436,7 @@ nav ul ul ul li{
   background-color: #022E51;
   border-radius: 50px;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
 }
 .labelbox{
   display: flex;
@@ -489,7 +518,7 @@ nav ul ul ul li{
   border: 1px solid #022E51;
   border-radius: 20px;
   box-shadow:  0 0 5px #33ffff,
-               0 0 10px #66ffff;
+  0 0 10px #66ffff;
 }
 .linkcol h3{
   border-radius: 50px;
@@ -511,4 +540,30 @@ nav ul ul ul li{
 /* selected link */
 .linkcol a:active {
   color: blue;
+}
+.checked {
+  color: orange;
+}
+.page_buttons{
+  width: 100%;
+  text-align: center;
+}
+.navigg{
+  background-color: #022E51;
+  color: white;
+  border-radius: 50px;
+  padding:1em;
+  text-align: center;
+  display:inline-block;
+  text-decoration: none;
+  margin:0 auto;
+}
+
+.navigg:hover {
+  background-color: green;
+  color: black;
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-display: swap;
 }

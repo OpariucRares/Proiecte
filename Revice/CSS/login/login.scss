@@ -9,7 +9,7 @@ $font-page: sans-serif;
   padding: 0;
 }
 body{
-  background-image: url('../../UX_UI/login_signUp/login_signUp_bg.png');
+  background-image: url('../../UX_UI/login_signUp/login_signUp_bg.webp');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -36,7 +36,7 @@ section{
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      animation: slide 30s infinite;
+      background-image: url("../../UX_UI/login_signUp/anim_logo/anim_logo.gif");
     }
   }
   
@@ -132,50 +132,6 @@ section{
     
   }
 }
-@keyframes slide{
-  0%{
-    background: url('../../UX_UI/login_signUp/anim_logo_alb/1.png') no-repeat center;
-    background-size: cover;
-      margin: 10px auto;
-  }
-  14%{
-    background: url('../../UX_UI/login_signUp/anim_logo_alb/2.png') no-repeat center;
-    background-size: cover;
-      
-      margin: 10px auto;
-  }
-  28%{
-    background: url("../../UX_UI/login_signUp/anim_logo_alb/3.png") no-repeat center;
-    background-size: cover;
-      
-      margin: 10px auto;
-  }
-  42%{
-    background: url("../../UX_UI/login_signUp/anim_logo_alb/4.png") no-repeat center;
-    background-size: cover;
-      margin: 10px auto;
-  }
-  56%{
-    background: url("../../UX_UI/login_signUp/anim_logo_alb/5.png") no-repeat center;
-    background-size: cover;
-      margin: 10px auto;
-  }
-  70%{
-    background: url("../../UX_UI/login_signUp/anim_logo_alb/6.png") no-repeat center;
-    background-size: cover;
-      margin: 10px auto;
-  }
-  84%{
-    background: url("../../UX_UI/login_signUp/anim_logo_alb/7.png") no-repeat center;
-    background-size: cover;
-      margin: 10px auto;
-  }
-  100%{
-    background: url('../../UX_UI/login_signUp/anim_logo_alb/1.png') no-repeat center;
-    background-size: cover;
-      margin: 10px auto;
-  }
-}
 @media screen and (max-width: 760px){
   section{
     .image-box{
@@ -200,5 +156,8 @@ section{
       }
     }
   }
-  
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-display: swap;
 }

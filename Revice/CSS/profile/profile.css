@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../../UX_UI/login_signUp/login_signUp_bg.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+section {
+  position: relative;
+  width: 90%;
+  height: 90vh;
+  display: flex;
+}
+section .image-box {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background-color: #fc944a;
+}
+section .image-box .profileBar {
+  color: #bcbdc0;
+  background: #022e51;
+  position: absolute;
+  width: 99%;
+  margin-bottom: auto;
+  border: 5px solid #fc944a;
+  align-content: center;
+}
+section .image-box .profileBar h1 {
+  top: 100%;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+}
+section .content-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+section .content-box .forum-box {
+  width: 60%;
+  height: 60vh;
+  color: #5b0b1c;
+}
+section .content-box .forum-box .button-home {
+  border: none;
+  background-color: #5b0b1c;
+  color: #bcbdc0;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  text-decoration: none;
+}
+section .content-box .forum-box .button-home:hover {
+  background-color: #022e51;
+}
+section .content-box .forum-box .input-box span {
+  font-size: 16px;
+  margin: 10px 10px 10px 5px;
+  display: inline-block;
+  color: #5b0b1c;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+section .content-box .forum-box .input-box input {
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #5b0b1c;
+  background: transparent;
+  border-radius: 30px;
+}
+section .content-box .forum-box .input-box input[type=submit] {
+  background: #5b0b1c;
+  color: #bcbdc0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+section .content-box .forum-box .input-box input[type=submit]:hover {
+  background: #022e51;
+}
+section .content-box .forum-box .input-box p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #5b0b1c;
+}
+section .content-box .forum-box .input-box p a {
+  color: #022e51;
+}
+
+@media screen and (max-width: 760px) {
+  section .content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+  }
+  section .content-box .forum-box {
+    width: 60%;
+    height: 50vh;
+    padding: 40px;
+  }
+  section .content-box .forum-box h3 {
+    color: green;
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 500;
+  }
+}
+@font-face {
+  font-family: "Pacifico";
+  font-display: swap;
+}
+
+/*# sourceMappingURL=profile.css.map */

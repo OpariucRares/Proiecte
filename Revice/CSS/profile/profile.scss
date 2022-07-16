@@ -1,0 +1,146 @@
+$darkblue: #022e51;
+$gray: #bcbdc0;
+$lightorange: #fc944a;
+$rosewood: #5b0b1c;
+
+$font-page: sans-serif;
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url('../../UX_UI/login_signUp/login_signUp_bg.webp');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+section{
+  position: relative;
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  .image-box{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    background-color: $lightorange;
+    .profileBar{
+      color: $gray;
+      background: $darkblue;
+      position: absolute;
+      width: 99%;
+      margin-bottom: auto;
+      border: 5px solid $lightorange;
+      align-content: center;
+      h1{
+        top: 100%;
+        height: 40px;
+        padding-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  .content-box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
+
+    .forum-box{
+      width: 60%;
+      height: 60vh;
+      color: $rosewood;
+      .button-home{
+        border: none;
+        background-color: $rosewood;
+        color: $gray;
+        padding: 5px 5px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .button-home:hover{
+        background-color: $darkblue;
+      }
+      .input-box{
+        span{
+          font-size: 16px;
+          margin: 10px 10px 10px 5px;
+          display: inline-block;
+          color: $rosewood;
+          font-weight: 300;
+          letter-spacing: 1px;
+        }
+        input{
+          width: 100%;
+          padding: 10px 15px;
+          outline: none;
+          font-weight: 400;
+          border: 1px solid white;
+          font-size: 16px;
+          letter-spacing: 1px;
+          color: $rosewood;
+          background: transparent;
+          border-radius: 30px;
+        }
+        input[type="submit"]{
+          background: $rosewood;
+          color: $gray;
+          outline: none;
+          border: none;
+          font-weight: 500;
+          cursor: pointer;
+        }
+        input[type = "submit"]:hover{
+          background: $darkblue;
+        }
+        p{
+          padding-top: 15px;
+          padding-bottom: 15px;
+          color: $rosewood;
+          a{
+            color: $darkblue;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 760px){
+  section{
+
+    .content-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 90%;
+      .forum-box{
+        width: 60%;
+        height: 50vh;
+        padding: 40px;
+        h3{
+          color: green;
+          text-align: center;
+          margin: 30px 0 10px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-display: swap;
+}

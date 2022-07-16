@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Revice Extension",
+    "description": "Get a list of products from well-known",
+    "version": "1.0",
+    "icons": {
+        "16": "images/Copac.jpg",
+        "48": "images/Copac.jpg",
+        "128": "images/Copac.jpg"
+    },
+    "action":{
+        "default_popup": "Index.html",
+        "default_title":"Revice extension"
+    }
+    
+}

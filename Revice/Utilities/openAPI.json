@@ -1,0 +1,172 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "This is a simple for Revice",
+    "version" : "1.0.0",
+    "title" : "OpenApi Documentation for Revice"
+  },
+  "tags" : [ {
+    "name" : "user",
+    "description" : "Calls for user"
+  } ],
+  "paths" : {
+    "/PHP/Controller/ProductController.php" : {
+      "get" : {
+        "tags" : [ "user" ],
+        "summary" : "get objects based of method and type",
+        "description" : "It will generate the productss from the database based from the method and the type  of the object\n",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "query",
+          "name" : "Method",
+          "description" : "it is the name of the method and based of that, it will show the products. The methods are getRandomProducts() and getFiltredProducts()",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "query",
+          "name" : "params",
+          "description" : "the type of the object.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "It will print the products."
+          }
+        }
+      }
+    },
+    "/PHP/Controller/changePasswordController.php" : {
+      "post" : {
+        "tags" : [ "user" ],
+        "summary" : "change the user password",
+        "description" : "it will change the userPassword using the session username, session account id, old password, new password and the retyped password. Based of the session language, it will the output of the message in the desired language.\n",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "parameters" : [ {
+          "in" : "formData",
+          "name" : "Username",
+          "description" : "the name of the username",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "AccountId",
+          "description" : "the id of the account",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "OldPassword",
+          "description" : "the old password",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "NewPassword",
+          "description" : "the new password",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "RetypePassword",
+          "description" : "the retyped Password",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "ChangePassword",
+          "description" : "based of this value, it will output the message in the desired language.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "It will print the message in case of succes or error."
+          }
+        }
+      }
+    },
+    "/PHP/Controller/loginController.php" : {
+      "post" : {
+        "tags" : [ "user" ],
+        "summary" : "it will log the user",
+        "description" : "it will login the user using the username or email and the password. Based of the session language, it will the output of the message in the desired language.\n",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "parameters" : [ {
+          "in" : "formData",
+          "name" : "UsernameEmail",
+          "description" : "the username or the email of the user",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "Password",
+          "description" : "the password of the user",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "Login",
+          "description" : "based of this value, it will output the message in the desired language.",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "It will print the message in case of succes or error."
+          }
+        }
+      }
+    },
+    "/PHP/Controller/signUpController.php" : {
+      "post" : {
+        "tags" : [ "user" ],
+        "summary" : "it will sign up the user",
+        "description" : "it will sign up the user using the username, email, password, retyped password and the session language. Based of the session language, it will the output of the message in the desired language.\n",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "parameters" : [ {
+          "in" : "formData",
+          "name" : "Username",
+          "description" : "the name of the user",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "Email",
+          "description" : "the email of the user",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "Password",
+          "description" : "the password which the user introduced",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "RetypePassword",
+          "description" : "the retyped password which the user introduced",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "in" : "formData",
+          "name" : "Register",
+          "description" : "the session language",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "It will print the message in case of succes or error."
+          }
+        }
+      }
+    }
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/OpariucRares/Revice/1.0.0",
+  "schemes" : [ "https", "http" ]
+}
