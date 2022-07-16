@@ -1,0 +1,245 @@
+D: IT
+Cum se numeste un mic fisier cu informaţii de tip text?
+a) Tab
+b) Cookie
+c) Tab History
+d) Tools
+b) Cookie
+Ce componenta poate fi asimilata "creierului" unui computer?
+a) RAM
+b) ROM
+c) CPU
+d) CD ROM
+c) CPU
+Acronimul IT provine de la:
+a) Internet Tehnology 
+b) Information Terms
+c) Internet Television
+d) Information Technology
+d) Information Technology
+Pe cati biti este reprezentata in memoria calculatorului o adresa IP v6?
+a) 32
+b) 64
+c) 128
+d) 256
+c) 128
+Ce inseamna prescurtarea www?
+a) World Wide Wild
+b) World Wide Wear
+c) World Wide Web
+d) Wrestling Wear World
+c) World Wide Web
+Care dintre urmatoarele raspunsuri sunt limbaje de programare?
+a) HTML
+b) CSS
+c) Python
+d) Semnelor
+c) Python
+Care dintre urmatoarele tipuri de sortare au o complexitate medie O(n*log(n))?
+a) heap sort
+b) bubble sort
+c) insertion sort
+d) bogo sort
+a) heap sort
+Care dintre urmatoarele sisteme de baze de date sunt relationale?
+a) Apache CouchDB
+b) SQLite
+c) Redis
+d) Cassandra
+b) SQLite
+Cine a inventat Git?
+a) Microsoft
+b) Dennis Ritchie
+c) Bill Gates
+d) Linus Torvalds
+d) Linus Torvalds
+Primul calculator portabil comercial a fost lansat în septembrie 1975 de către compania...
+a) Osborne
+b) Xerox
+c) IBM
+d) Apple
+c) IBM
+D: Geografie
+Care este cel mai batran vulcan din lume?
+a) Erebus
+b) Lassen Peak
+c) Etna
+d) Llullaillaco
+c) Etna
+Pe teritoriul cator tari se întinde Desertul Sahara?
+a) 10
+b) 4
+c) 6 
+d) 8
+a) 10
+Ce stat european are capitala în orasul Praga?
+a) Elvetia
+b) Norvegia
+c) Cehia
+d) Grecia
+c) Cehia
+Cat la suta din suprafata Pamantului este acoperita de apa?
+a) 71
+b) 62
+c) 33
+d) 50
+a) 71
+Care dintre următoarele ape curgatoare se varsă în Marea Moarta?
+a) Eufrat
+b) Gange
+c) Amazon
+d) Iordan
+d) Iordan
+Care tara este si continent
+a) Statele Unite ale Americii
+b) Rusia
+c) Australia
+d) Romania
+c) Australia
+Marele Zid Chinezesc se intinde de-a curmezisul Chinei pe circa:
+a) 5600
+b) 7500
+c) 6400
+d) 8200
+c) 6400
+Care dintre urmatoarele rauri nu strabate teritoriul Rusiei?
+a) Volga
+b) Obi
+c) Lena
+d) Nistru
+d) Nistru
+Cand spune un filipinez ca merge in capitala, in ce oras se afla?
+a) Bangkok
+b) Rangoon
+c) Manila
+d) Kuala Lumpur
+c) Manila
+Unde se afla marele cerc megalitic din lespezi de piatra, Stonehenge?
+a) Hampshire
+b) Dorset
+c) Berkshire
+d) Wiltshire
+d) Wiltshire
+D: Biologie
+Ce organit celular este supra-numit <The powerhouse of the cell>?
+a) Mitocondria
+b) Ribozomul
+c) Aparatul Golgi
+d) Ribozomul
+a) Mitocondria
+Cum se numeşte nimfa fluturelui?
+a) crochiu
+b) cuca
+c) crisalida
+d) cucui
+c) crisalida
+Ochii carui mamifer sau pasare sunt mai mari decat creierul?
+a) strut
+b) vultur
+c) iepure
+d) uliu
+a) strut
+Care din următoarele animale inghite prada intreaga?
+a) sarpele
+b) hiena
+c) leul
+d) ghepardul
+a) sarpele
+Cate organe olfactive au melcii?
+a) 4
+b) 1	
+c) 3
+d) 6
+a) 4
+In ce an a fost obtinut primul mamifer prin clonare - oaia Dolly?
+a) 1996
+b) 2000
+c) 2004
+d) 1992
+a) 1996
+Care dintre animalele de mai jos este complet surd?
+a) koala
+b) sarpele tigru
+c) broasca testoasa
+d) licuriciul
+c) broasca testoasa
+Ce planta este semiparazita?
+a) lamai
+b) mimoza
+c) lalea
+d) vasc
+d) vasc
+Din cate vertebre este alcatuita coloana vertebrala?
+a) 31
+b) 33
+c) 35
+d) 37
+b) 33
+La ce culori reactioneaza ("se infurie") taurul?
+a) portocaliu
+b) rosie
+c) verde
+d) la nici una (nu deosebeste culorile)
+d) la nici una (nu deosebeste culorile)
+D: Mitologie
+Cine este considerat a fi fost protectorul Atlantidei?
+a) Zeus
+b) Poseidon
+c) Atlas 
+d) Ares
+b) Poseidon
+Cine era mama calului înaripat Pegas?
+a) Hera
+b) Medusa
+c) Persefona
+d) Leda
+b) Medusa
+Chiron reprezinta in mitologia greaca:
+a) Intaiul centaur (corect)
+b) Zeul vindecarii
+c) Regele Olimpului
+d) Zeul timpului 
+a) Intaiul centaur
+Cum se numea regele mitologic la a carui atingere orice obiect se transforma in aur?
+a) Ptolemeu
+b) Midas
+c) Tezeu
+d) Leonidas
+b) Midas
+Care este personificarea feminina a Pamantului in mitologia greaca?
+a) Geea
+b) Atena
+c) Afrodita
+d) Minerva
+a) Geea
+Cate munci a avut de indeplinit cel mai cunoscut erou din mitologia greaca, Hercule?
+a) 6
+b) 8
+c) 9
+d) 12
+d) 12
+In mitologia greaca, zeul infernului era:
+a) Ares
+b) Hades
+c) Poseidon
+d) Ahile
+b) Hades
+Ce personaj mitologic are un singur ochi?
+a) Ciclopul
+b) Centaurul
+c) Sirena
+d) Dragonul
+a) Ciclopul
+Ca numar de zile, cea mai scurta dintre zodii este...?
+a) Gemeni
+b) Leul
+c) Pesti
+d) Berbec
+c) Pesti 
+Fiul lui Isis şi al lui Osiris, in mitologia egipteana este:
+a) Horus
+b) Set
+c) Nephthys
+d) Tefnut
+a) Horus
+
