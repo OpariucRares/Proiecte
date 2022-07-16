@@ -1,0 +1,57 @@
+CREATE TABLE users  
+(  
+ id int IDENTITY(1,1) PRIMARY KEY,
+ username varchar (50),  
+ email varchar (50),  
+ password varchar(50)  
+);
+
+CREATE TABLE products  
+(  
+ id int IDENTITY(1,1) PRIMARY KEY,  
+ name varchar (50),  
+ price float(4),
+ rating float(4),
+ brand varchar(50),
+ store varchar(50),
+ color varchar(50),
+ link varchar(50),
+ type varchar(50)  
+);
+
+
+CREATE TABLE favorites
+(
+	id_user int,
+	id_product int,
+	Primary Key(id_user,id_product)
+)
+
+CREATE TABLE properties  
+(  
+ id int IDENTITY(1,1) PRIMARY KEY,  
+ id_product int,
+ name varchar(50),
+ value varchar(50)
+);
+
+
+alter table properties
+add constraint FK_Products_Properties FOREIGN KEY (id_product)
+	REFERENCES products (id)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE;
+
+
+alter table favorites
+add constraint FK_User_Favorites FOREIGN KEY (id_user)
+	REFERENCES users (id)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE;
+
+alter table favorites
+add constraint FK_Product_Favorites FOREIGN KEY (id_product)
+	REFERENCES products (id)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE;
+

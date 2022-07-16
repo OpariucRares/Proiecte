@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../../UX_UI/login_signUp/login_signUp_bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  position: relative;
+  width: 90%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .image-box {
+  position: relative;
+  width: 50%;
+  height: 90%;
+  border-right: 6px solid #022e51;
+  background-color: #fc944a;
+}
+
+section .image-box .image-content {
+  width: 90%;
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: slide 30s infinite;
+          animation: slide 30s infinite;
+}
+
+section .content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: #fc944a;
+  border-left: 10px solid #bcbdc0;
+}
+
+section .content-box .forum-box {
+  width: 60%;
+  height: 50vh;
+  color: #5b0b1c;
+}
+
+section .content-box .forum-box .login-text {
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-bottom: 4px solid #bcbdc0;
+  letter-spacing: 1px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+section .content-box .forum-box .button-home {
+  border: none;
+  background-color: #5b0b1c;
+  color: #bcbdc0;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+section .content-box .forum-box .button-home:hover {
+  background-color: #022e51;
+}
+
+section .content-box .forum-box .remember {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+section .content-box .forum-box .remember input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+section .content-box .forum-box .input-box span {
+  font-size: 16px;
+  margin: 10px 10px 10px 5px;
+  display: inline-block;
+  color: #5b0b1c;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+section .content-box .forum-box .input-box input {
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #5b0b1c;
+  background: transparent;
+  border-radius: 30px;
+}
+
+section .content-box .forum-box .input-box input[type="submit"] {
+  background: #5b0b1c;
+  color: #bcbdc0;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+section .content-box .forum-box .input-box input[type="submit"]:hover {
+  background: #022e51;
+}
+
+section .content-box .forum-box .input-box p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #5b0b1c;
+}
+
+section .content-box .forum-box .input-box p a {
+  color: #022e51;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/1.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  14% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/2.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  28% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/3.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  42% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/4.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  56% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/5.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  70% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/6.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  84% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/7.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  100% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/1.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+}
+
+@keyframes slide {
+  0% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/1.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  14% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/2.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  28% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/3.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  42% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/4.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  56% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/5.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  70% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/6.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  84% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/7.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+  100% {
+    background: url("../../UX_UI/login_signUp/anim_logo_alb/1.png") no-repeat center;
+    background-size: cover;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  section .image-box {
+    display: none;
+  }
+  section .content-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 90%;
+  }
+  section .content-box .forum-box {
+    width: 60%;
+    height: 50vh;
+    padding: 40px;
+  }
+  section .content-box .forum-box h3 {
+    color: green;
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 500;
+  }
+}
+/*# sourceMappingURL=login.css.map */

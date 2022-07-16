@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Scholarly HTML</title>
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+
+      <h1>Scholarly HTML</h1>
+    </header>
+    <!--
+      XXX
+      - check refs
+      - the math example has too much maths
+      - bring back some of the old style
+      - make semantics, validation, processing sub-sections of each structural element
+      - have a section before that for general constructs
+        - explain why use RDFa
+        - explain our patterns: RDFa, roles
+      - figure captions need to get set throughout
+      - dedication? see doc-dedication
+      - syntactic constraints (prefix)
+      - needs more sthenurines
+      - examples of everything
+      - some notes on using Semantic CSS
+      - needs more RDFa in the spec itself
+    -->
+    <div role="contentinfo">
+      <dl>
+        <dt>Authors</dt>
+        <dd>
+			Baranceanu Vlad-Andrei <br>
+			Brezuleanu Alexandru Mihai <br>
+			Opariuc Rares Ioan
+        </dd>
+        
+      </dl>
+    </div>
+    <section id="introduction" role="doc-introduction">
+      <!-- review? -->
+      <h2>Introducere</h2>
+	  <h3>1.1 Cerinta</h3>
+      <p>
+        Pe baza unui API REST ori GraphQL propriu, realizati o aplicatie Web – disponibila,
+		de asemenea, ca extensie de navigator Web – care recomanda utilizatorilor autentificati 
+		sau nu diverse dispozitive electronice (telefoane, tablete, ceasuri, drone,…) in functie 
+		de pret ori alte caracteristici – e.g., model similar, facilitati, culoare, autonomie etc. <br> 
+		Datele analizate vor fi preluate din surse multiple (fluxuri de stiri, API-uri disponibile, via scraping)
+		 oferite de situri de profil ce vor putea fi precizate de utilizator. Statisticile celor mai populare produse
+		 si recomandarile generate vor fi disponibile si sub forma de fluxuri de stiri RSS si partajate
+		 pe minim o retea sociala folosind hashtag-ul #redevice. Se vor avea in vedere aspecte precum
+		 internationalizarea si accesibilitatea.
+
+      </p>
+      <h3>1.2 Publicul tinta</h3>
+      <p>
+        Acest document este pentru consumatori acestui produs care sunt interesati de detaliile tehnice si cum poate fi utilizata
+		aplicatia pentru a indeplini cerinta clientului.
+      </p>
+	  <h3>1.3 Scopul Produsului</h3>
+      <p>
+        Produsul isi doreste sa-si ajute utilizatori prin intermediul unor recomandari ale produselor de pe
+		site-urile cerute de catre utilizator astfel sa ii fie mai facil in a gasi produse care sunt considerate
+		bune de catre comunitate.
+      </p>
+	  </section>
+	  <section id="description" role="doc-description">
+	  <h2>Descriere generala</h2>
+      <h3>2.1 Functiile Produsului</h3>
+      <p>
+        Utilizatorul poate cauta produse, poate sa le sorteze dupa preferintele lui, poate sa vada proprietatile fiecarui produs,
+		sa dea share pe twitter, sa se autentifice.
+      </p>
+	  <h3>2.2 Clasele de utilizatori</h3>
+      <p>
+        Utilizatori vor fi oameni pasionati de produse it care nu sunt siguri de ce decizie sa faca si au nevoie de un mic ajutor.
+      </p>
+	  <h3>2.3 Sistem de operare</h3>
+      <p>
+        Aplicatia va rula in orice sistem de operare Windows avand nevoie access la baza de date si acces la internet.
+      </p>
+	  <h3>2.4 Documentatie utilizator</h3>
+      <p>
+        In cadrul proiectului se gaseste un manual de utilziare pentru a il ajuta pe consumator in intelegerea site-ului.
+      </p>
+	  </section>
+	  <section id="interface" role="doc-interfaces">
+	  <h2>Interfate</h2>
+      <h3>3.1 Interfata Utilizator</h3>
+      
+	  <h4>3.1.1 Homepage (index) (Brezuleanu Alexandru)</h4>
+	  <p>
+	  Pagina HomePage(index) este structurata in patru sectiuni. O prima sectiune cuprinde logo-ul firmei, bara
+	  de cautarea precum si butoanele de login, respectiv sign up, fiind urmata de a doua sectiune ce cuprinde bara 
+	  de meniu prin intermediul careia pot fi accesate categorii de produse si informatii despre firma si noutati.
+	  A treia sectiune este divizata in doua: filtrul de cautare, prin intermediul caruia vor putea fi filtrate 
+	  gadget-urile in functie de preferinta utilizatorului, respectiv lista de produse ce va contine itemele 
+	  sugerate clientului. Ultima sectiune contine link-uri utile ce pot simplifica interactiunea utilizatorului cu aplicatia.<br>
+		Butoanele de login si sign up duc spre pagina de logare, respectiv cea de inregistrare, in timp ce bara de cautare va permite afisarea doar acelor produse care respecta un pattern specificat de utilizator. 
+		Sectiunea care cuprinde bara de meniu contine link-uri catre paginile respective, iar in cazul unor rezolutii mai mici dispare, fiind inlocuita de catre un buton care o face sa apara intr-un mod convenabil rezolutiei.
+		Filtrul de cautare contine mai multe checkbox-uri ce permit alegerea unor produse care sa intalneasca doar acele specificatii(coloane din tabela products a bazei de date) precizate de client. Lista cu produse va contine cate un chenar specific fiecarui gadget, in care se va putea specifica ratingul dat de utilizator dar care va permite si plasarea acelui item in categoria favorite. La rezolutii mai mici, ambele sectiuni schimba modul de afisare a informatiilor din cel orizontal in cel vertical, fiind astfel mai usor de accesat si vizualizat informatia.
+		Ultima sectiunea cuprinde link-uri catre pagini utile utilizatorului sau catre informatii referitoare la aplicatie/membrii echipei, fiind menita astfel sa sporeasca aplicabilitatea site-ului.
+
+	  </p>
+	  <h4>3.1.2 Item view (Baranceanu Vlad) </h4>
+	  <p>
+	  Pagina de Item View este structurata astfel: o prima sectiune unde se afla logo-ul firmei, bara de cautarea,
+	  butoanele de login si sign up, o bara prin care pot fi accesata categorii de produse si informatii despre firma s
+	  i noutati, o sectiune unde sunt prezente informatii despre produs si imagini, si o ultima sectiune unde sunt 
+	  prezentate recomandari de produse asemanatoare. <br>
+	Butoanele de login si sign up duc spre pagina de logare respectiv si  sign up iar bara de cautare duce catre index <br>
+	Sectiunea care contine bara de categorii si informatii despre firma contine link-uri catre paginile respective, iar aceasta
+	sectiune pentru rezolutii mai mici dispare , fiind inlocuita de catre un buton care o face sa apara intr-un mod convenabil 
+	rezolutiei. <br>
+Sectiunea unde este prezentat produsul contine imagini ale produsului si informatii despre pret si specificatii, 
+acestea fiind preluate din baza de date. Sectiunea accesata la rezolutii mai mici schimba modul de afisare a informatiilor 
+din cel orizontal in cel vertical, fiind astfel mai usor de accesat si vizualizat informatia.
+<br>
+Ultima sectiunea cuprinde recomandari facute de un algoritm si in aceasta sectiune sunt prezentate imaginile 
+produselor si numele lor, iar acestea pot fi accesate apasand pe ele, utilizatorul fiind condus astfel catre pagina respectiva.
+	  </p>
+	  <h4>3.1.3 Login si Sign up (Opariuc Rares Ioan) </h4>
+	  <p>
+	  
+		Pagina de Login este structurata astfel: animatia cu logo-ul firmei care se afla pe prima pagina si procesul de logare al utilizatorului. <br>
+		Animatia este implementata astfel: se foloseste de @keframes si se schimba imaginea curenta cu o alta imagine
+		 ce are in plus noi elemente ce alcatuiesc logo-ul. Spre exemplu, in prima imagine apare doar caruciorul gol, 
+		 pe cand in a doua regasim si un item plasat inauntrul caruciorului. Animatia se deruleaza pana cand este creat 
+		 tot logo-ul firmei. <br>
+		Procesul de logare al utilizatorului se foloseste de un form si de butoane auxiliare.
+		 Cand este apasat butonul de home, utilizatorul este redirectionat la pagina principala. 
+		 Cand utilizatorul introduce Username-ul si Parola, se va verifica in baza de date daca exista utilizatorul 
+		 respectiv. In caz afirmativ, utilizatorul va fi redirectionat la pagina principala si va fi conectat.
+		 In caz negativ, pagina web il va atentiona ca nu exista utilizatorul respectiv. <br> 
+		Butonul de Remember me va retine utilizatorul cand va redeschide pagina si astfel acesta va fi conectat automat. Se va folosi un cookie pentru a retine datele respective. Daca utilizatorul vrea sa isi faca un cont nou, va apasa butonul de sign up care il va redirectiona la pagina de sign up.
+		<br>
+ 
+
+		In cazul in care utilizatorul este pe telefon, va disparea animatia si va ramane procesul de logare (rezolutia maxima este de 760 px).
+		 <br>
+		Daca utilizatorul vrea sa isi creeze un cont nou, va apasa butonul de Sign Up si va fi redirectionat la pagina de sign up. Aceasta va avea aceeasi structura ca pagina de login (animatia si procesul de logare). Utilizatorul trebuie sa introduca username-ul, email-ul, parola noua si sa testeze din nou parola noua. Remember me va avea aceeasi functionalitate ca pagina de login. Pagina de Signup are acelasi Responsive Design ca Login-ul.
+		<br>Datele vor fi validate la intrarea Signup-ului (email-ul trebuie sa respecte formatul, parola tastata de doua ori sa fie aceeasi). Cand datele au fost introduse corespunzator si se va apasa pe register, se va verifica baza de date pentru a vedea daca exista utilizatori cu acelasi email sau username. In caz negativ, site-ul il va atentiona pe utilizator ca datele sunt deja folosite si trebuie sa le schimbe. In caz afirmativ, vor fi introduse in baza de date informatiile iar utilizatorul va fi redirectionat spre pagina principala in timp ce este logat cu contul respectiv.
+		<br>In ambele cazuri, daca logarea s-a realizat cu succes, va aparea in dreapta sus numele utilizatorului in timp ce acesta va naviga restul paginilor. Datele vor fi criptate prin intermediul unor functii deja predifinite ( md5(), sha1() ) si vor fi stocate in baza de date pentru securitatea informatiilor.
+
+	  </p>
+	  
+	  
+	  <h3>3.2 Interfata software</h3>
+      <p>
+        Aplicatia comunica cu o baza de date in care sunt retinute produsele si acesta comunicare este
+		structurate pe baza unui model MCV unde exista clase care comnuica intre ele pentru a rezolva cerintele utilizatorului
+      </p>
+	  </section>
+	  <section id="featuers" role="doc-features">
+	  <h2>Caracteristici Sistem</h2>
+      <h3>4.1 Recomandare produse</h3>
+      <p>
+        Sistemul afiseaza cele mai populare produse de pe site-urile mari din Romania(Emag,Altex,PCGarage) si acestea pot fi 
+		sortate dupa diferiti parametrii cum ar fi tipul produsului, brand si utilizatorul poate sa caute un anumit tip de produs 
+		
+      </p>
+	  </section>
+      
+  </body>
+</html>

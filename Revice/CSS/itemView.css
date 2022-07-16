@@ -1,0 +1,487 @@
+
+@media (max-width: 600px) {
+  div {
+    width: 100%;
+  }
+  section{
+    width: 100%;
+  }
+  body{
+    font-size: 10px;
+  }
+  .Produs{
+    display:grid;
+  }
+  .imagini{
+    background-color:#A3B4C8;
+    width:100%;
+    height:100px;
+    text-align:center;
+  }
+  .imagini img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     margin-top: auto;
+    margin-bottom: auto;
+    width:30%;
+    height:100px;
+    image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+    }
+ .informatii{
+   background-color:#A3B4C8;
+   width:100%;
+ }
+ .Produse{
+   display:grid;
+   height:auto;
+   background-color:#022E51;
+ }
+ .Produse div{
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+   color:#CC6d3d;
+ }
+ .asemanator img{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom:auto;
+  width:30%;
+  height:100px;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+ }
+ .asemanator div{
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+   color:#CC6d3d;
+ }
+ 
+}
+
+@media (min-width: 600px)
+ {
+   .Produs{
+    display:flex;
+  }
+  .imagini{
+    background-color:#A3B4C8;
+    width:45%;
+    height:400px;
+    text-align:center;
+  }
+  .imagini img{
+    display: block;
+    margin-top:auto;
+    width: 150px;
+    height:55%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:auto;
+    image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+    }
+    .imagini div img{
+      display: block;
+      margin-top:auto;
+      width: 100%;
+      height:55%;
+      margin-left:auto;
+      margin-right:auto;
+      margin-bottom:auto;
+      image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+      }
+  .informatii{
+    background-color:#A3B4C8;
+    width:55%;
+  }
+  .Produse{
+   display:flex;
+   background-color:#022E51;
+   height: auto;
+   margin-bottom: auto;
+ }
+ .Produse div{
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+   color:#CC6d3d;
+ }
+ .asemanator img{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom:auto;
+  width:55%;
+  height:auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+ }
+ .asemanator div{
+   margin-top:auto;
+   margin-bottom:auto;
+   text-align:center;
+   color:#CC6d3d;
+ }
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+.categorii:first-of-type{
+  width:19%
+}
+.categorii{
+  padding-top:20px;
+  width:23%;
+  text-align:center;
+  overflow-x:auto;
+   white-space: nowrap;
+}
+.categorii:hover{
+  background-color:#A3B4C8;
+  color: #CC6d3d;
+}
+.reclame{
+  padding:20px;
+  text-align:center;
+  width:33%;
+}
+.reclame:hover{
+  background-color:#A3B4C8;
+  color: #CC6d3d;
+}
+.imagini{
+  display:flex;
+  border-color:#022E51 ;
+  border-style:inset;
+}
+.imagini div{
+  margin-top:auto;
+  margin-bottom:auto;
+}
+.Produs{
+  color:#CC6D3d;
+}
+.informatii{
+  border-color:#022E51 ;
+    border-style:inset;
+    
+}
+.informatii div{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  font-weight: bold;
+}
+.informatii table{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  color:#CC6D3d;
+  font-size: large;
+}
+.informatii table{
+  width:40%;
+}
+tr:nth-child(odd) th:nth-child(odd),
+tr:nth-child(even) th:nth-child(odd) {
+  background: #022E51;
+}
+tr:nth-child(odd) td:nth-child(odd),
+tr:nth-child(even) td:nth-child(odd) {
+  background: #022E51;
+}
+
+
+
+
+
+.container {
+  display: flex;
+  width:100%;
+}
+.header{
+  display: flex;
+}
+.logo {
+  text-align: center;
+  padding-top:12px;
+  padding-bottom: 12px;
+  width:20%;
+  color:#CC6d3d;
+  background-color:#022E51;
+}
+.header div form {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  padding: 0px 20px;
+  border-radius: 50px;
+  background: #A3B4C8;
+}
+.header div form #SearchBar {
+   border: none;
+   font-size: 25px;
+   font-weight: 500;
+   color: #CC6d3d;
+   background-color:#A3B4C8;
+   width:90%;
+   border-radius: 70px;
+}
+.header div form #SearchBar:focus {
+   outline: none
+}
+.SearchBar{
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#022E51;
+  color: #CC6D3d;
+  text-align: center;
+  width:70%;
+}
+.Submit{
+  border-color: white;
+  background-color: #A3B4C8;
+  color: white;
+  font-size: 25px;
+}
+#Submit::placeholder{
+  color: #CC6D3d;
+}
+.Submit:hover{
+  color: #CC6d3d;
+}
+.item{
+  display: grid;
+  background-color:#022E51;
+  text-align: center;
+  width:20%;
+}
+
+.btn{
+  background: none;
+  border:2px solid white;
+  text-transform: uppercase;
+  color: #CC6d3d;
+  border-radius: 50px;
+  margin: 1px;
+  cursor: pointer;
+  transition: 0.4s linear;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.btn:hover{
+  background: orange;
+  color:white;
+}
+
+nav{
+  background: #022E51;
+  color: #CC6d3d;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: #CC6D3d;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 40px;
+  padding-left: 60px;
+}
+nav ul{
+  float: left;
+  margin-left: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #022E51;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #CC6D3d;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: cyan;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 110px;
+}
+.show,.icon,input[type="checkbox"]{
+  display: none;
+}
+
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    position: relative;
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: #CC6D3d;
+    font-size: 18px;
+    padding: 0 15px;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    top: 30%;
+    position: absolute;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 15px;
+  }
+  nav ul ul ul a{
+    padding-left: 15px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+}
+
+
+.Produse{
+  background-color: #A3B4C8;
+  border-color: #022E51;
+  border-radius: 2px;
+}
+.links{
+  display: flex;
+  color: #022E51;
+  background-color: #A3B4C8;
+}
+.linkcol{
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin: 10px;
+  background-color: #A3B4C8;
+  border: 1px solid #022E51;
+  border-radius: 20px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+.linkcol h3{
+  border-radius: 50px;
+}
+.linkcol a:link {
+  color: #022E51;
+}
+
+/* visited link */
+.linkcol a:visited {
+  color: #B74803;
+}
+
+/* mouse over link */
+.linkcol a:hover {
+  color: pink;
+}
+
+/* selected link */
+.linkcol a:active {
+  color: blue;
+}
